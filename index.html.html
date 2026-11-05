@@ -1,0 +1,645 @@
+<!-- 檔名：index.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>專業團隊｜職場權益調查、四大計畫與 AI 賦能</title>
+  <meta name="description" content="提供中立客觀的職場性騷擾與霸凌外部調查、職安四大計畫導入，結合 AI 數據化管理與白話溝通，為企業與員工打造合規、安心的友善職場防護網。">
+  
+  <!-- Google Search Console 驗證標記 -->
+  <meta name="google-site-verification" content="（你自己的一串英數字）" />
+
+  <!-- Canonical and Open Graph Tags -->
+  <link rel="canonical" href="https://github.com/INDEPENDENT8637X">
+  <meta property="og:title" content="專業團隊｜職場權益調查、四大計畫與 AI 賦能">
+  <meta property="og:description" content="提供中立客觀的職場性騷擾與霸凌外部調查、職安四大計畫導入，結合 AI 數據化管理與白話溝通，為企業與員工打造合規、安心的友善職場防護網。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/INDEPENDENT8637X">
+  <meta property="og:image" content="share.jpg">
+
+  <!-- Favicon using SVG Emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+
+  <!-- Google Fonts for Literary Ming & Clean Sans-Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            warm: {
+              50: '#FAF8F5',
+              100: '#F4EFEA',
+              200: '#E6DDD4',
+              300: '#D5C5B5',
+              700: '#5C5248',
+              800: '#3D352E',
+              900: '#26201B'
+            },
+            morandi: {
+              green: '#4A6B5D',
+              greenDark: '#3A5449',
+              greenLight: '#EAF0ED',
+              wood: '#8C6D53',
+              woodLight: '#F7F3EE',
+              gray: '#788285'
+            }
+          },
+          fontFamily: {
+            serif: ['Noto Serif TC', 'serif'],
+            sans: ['Noto Sans TC', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF8F5;
+      color: #3D352E;
+      font-family: 'Noto Sans TC', sans-serif;
+      line-height: 1.85;
+      letter-spacing: 0.02em;
+    }
+
+    h1, h2, h3, .font-serif-title {
+      font-family: 'Noto Serif TC', serif;
+    }
+
+    /* Subtle sunlight/dappled shadow background effect */
+    .sunlight-bg {
+      background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.8) 0%, rgba(250, 248, 245, 0.4) 50%, rgba(230, 221, 212, 0.3) 100%),
+                  linear-gradient(135deg, rgba(244, 239, 234, 0.6) 0%, rgba(250, 248, 245, 0.9) 100%);
+    }
+
+    /* Smooth Scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+  <!-- JSON-LD Structured Data for Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "紅眼睛顧問",
+    "alternateName": "紅眼睛顧問",
+    "jobTitle": "不法侵害調查人員(外部顧問)、性騷擾調查人員、勞工健康服務計劃顧問",
+    "url": "https://github.com/INDEPENDENT8637X",
+    "email": "mailto:hrs0425123@gmail.com",
+    "sameAs": [
+      "https://line.me/R/ti/p/@zpf8637x"
+    ],
+    "description": "提供中立客觀的職場性騷擾與霸凌外部調查、職安四大計畫導入，結合 AI 數據化管理與白話溝通。"
+  }
+  </script>
+</head>
+<body class="antialiased selection:bg-morandi-greenLight selection:text-morandi-greenDark">
+
+  <!-- 1. Header & Navigation -->
+  <header class="sticky top-0 z-50 bg-warm-50/90 backdrop-blur-md border-b border-warm-200/60 transition-all">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <img src="HRLOGO .png" alt="紅眼睛顧問 Logo" class="w-10 h-10 object-cover rounded-full border border-warm-300" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/consultant/200/200';">
+        <span class="font-serif text-xl font-bold tracking-wider text-warm-900 group-hover:text-morandi-green transition-colors">紅眼睛顧問</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-base font-medium text-warm-700">
+        <a href="#about" class="hover:text-morandi-green transition-colors">關於我</a>
+        <a href="#skills" class="hover:text-morandi-green transition-colors">專長技能</a>
+        <a href="#services" class="hover:text-morandi-green transition-colors">服務項目</a>
+        <a href="#testimonials" class="hover:text-morandi-green transition-colors">客戶推薦</a>
+        <a href="#knowledge" class="hover:text-morandi-green transition-colors">職場指南</a>
+        <a href="#faq" class="hover:text-morandi-green transition-colors">常見問題</a>
+        <a href="#contact" class="bg-morandi-green text-white px-5 py-2 rounded-lg hover:bg-morandi-greenDark transition-colors shadow-sm">聯絡我</a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="menu-btn" class="md:hidden text-warm-800 p-2 focus:outline-none" aria-label="切換選單">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Nav -->
+    <div id="mobile-menu" class="hidden md:hidden bg-warm-50 border-b border-warm-200 px-6 pt-2 pb-6 space-y-4">
+      <a href="#about" class="block text-warm-800 font-medium hover:text-morandi-green py-1">關於我</a>
+      <a href="#skills" class="block text-warm-800 font-medium hover:text-morandi-green py-1">專長技能</a>
+      <a href="#services" class="block text-warm-800 font-medium hover:text-morandi-green py-1">服務項目</a>
+      <a href="#testimonials" class="block text-warm-800 font-medium hover:text-morandi-green py-1">客戶推薦</a>
+      <a href="#knowledge" class="block text-warm-800 font-medium hover:text-morandi-green py-1">職場指南</a>
+      <a href="#faq" class="block text-warm-800 font-medium hover:text-morandi-green py-1">常見問題</a>
+      <a href="#contact" class="block bg-morandi-green text-white text-center py-2.5 rounded-lg hover:bg-morandi-greenDark transition-colors font-medium">聯絡我</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. 開場 Hero (版型 D: 大字滿版 layout) -->
+    <section class="relative min-h-[85vh] flex items-center justify-center sunlight-bg px-6 py-20 border-b border-warm-200">
+      <div class="max-w-4xl mx-auto text-center space-y-8">
+        
+        <!-- Key Identity Tag -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-morandi-greenLight text-morandi-greenDark text-sm font-medium tracking-wide">
+          <span>🛡️</span>
+          <span>職場權益調查 ｜ 職安四大計畫 ｜ AI 賦能顧問</span>
+        </div>
+
+        <!-- Main Heading (h1 on page) -->
+        <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-warm-900 leading-tight md:leading-snug">
+          我用一站式的職場健康與法規顧問服務，幫助沒有專職醫護或法務的中小企業，順利通過勞檢審查並提升職場幸福感！
+        </h1>
+
+        <!-- One Line Pitch -->
+        <p class="text-lg md:text-xl text-warm-700 max-w-2xl mx-auto font-light">
+          霸凌性騷退散、四大計畫輕鬆搞定、勞工健康顧問
+        </p>
+
+        <!-- CTAs -->
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#contact" class="w-full sm:w-auto bg-morandi-green text-white text-lg px-8 py-3.5 rounded-lg hover:bg-morandi-greenDark transition-colors shadow-md text-center font-medium">
+            預約或詢問服務
+          </a>
+          <a href="#services" class="w-full sm:w-auto bg-white border border-warm-300 text-warm-800 text-lg px-8 py-3.5 rounded-lg hover:bg-warm-100 transition-colors text-center font-medium">
+            了解服務項目
+          </a>
+        </div>
+
+        <div class="pt-6 text-sm text-morandi-gray">
+          📍 服務範圍：台中、彰化、雲林、嘉義、台南、高雄、屏東
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 關於我 About Section (Two Column Layout) -->
+    <section id="about" class="py-20 px-6 max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Image Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-lg border-4 border-white bg-warm-100">
+            <img src="about.jpg" alt="關於我 - 正在進行顧問與健康服務的紅眼睛顧問" class="w-full h-full object-cover" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/aboutconsult/600/750';">
+          </div>
+          <div class="absolute -bottom-6 -right-4 bg-morandi-wood text-white px-6 py-4 rounded-xl shadow-md text-sm">
+            <p class="font-serif font-semibold text-base">獨立外部顧問</p>
+            <p class="text-warm-100 text-xs mt-0.5">客觀中立・帶有溫度的執業準則</p>
+          </div>
+        </div>
+
+        <!-- Right Content Block -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-block border-b-2 border-morandi-green pb-1 text-morandi-green font-semibold tracking-wider text-sm uppercase">
+            About Me
+          </div>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-warm-900">
+            嗨，我是你的職場健康與權益守護夥伴！
+          </h2>
+          
+          <div class="space-y-4 text-warm-800 text-base leading-relaxed">
+            <p>
+              很多 HR 和企業主找到我時，往往正夾在繁雜的勞基法規、不知道怎麼開始的「四大計畫」，或是令人頭痛又棘手的職場性騷擾與霸凌申訴之間。我深知處理這些問題的壓力和無助——既要顧及法規合規，又要兼顧人情與公司運作。
+            </p>
+            <p>
+              我的專業領域涵蓋外部獨立調查（性騷擾/不法侵害）與勞工健康服務（四大計畫規劃、健康促進講座）。我的目標很簡單：幫企業省去試錯的摸索時間，優雅合規地解決職場疑難雜症，讓雇主安心營運，員工也能享有真正具備安全感與幸福感的工作環境。
+            </p>
+          </div>
+
+          <!-- Highlight Quote Box -->
+          <div class="p-6 bg-morandi-greenLight/60 rounded-xl border-l-4 border-morandi-green space-y-2 my-6">
+            <h3 class="font-serif font-bold text-warm-900 text-lg">我的故事</h3>
+            <p class="text-warm-800 text-sm italic">
+              「再完美的營運與永續策略，如果少了『人』的健康與安全，都只是空中樓閣。」
+            </p>
+            <p class="text-warm-700 text-sm">
+              原本我在企業內部深耕永續策略與制度管理，處理大量的數據與合規指標。一次處理職場爭議的經驗讓我深受觸動——法律與健康制度不該只是冰冷的規範，更需要「能落地執行的策略」與「帶有溫度的客觀溝通」。因此我選擇站出來成為獨立外部顧問，把繁雜法規轉化為真正的職場防護網。
+            </p>
+          </div>
+
+          <!-- Principles -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+            <div class="p-4 bg-white rounded-lg border border-warm-200">
+              <span class="text-xl">⚖️</span>
+              <h4 class="font-bold text-warm-900 text-sm mt-1">客觀中立，守護信任</h4>
+              <p class="text-xs text-warm-700 mt-1">以事實為依據、法規為準繩，保護雙方隱私權益。</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg border border-warm-200">
+              <span class="text-xl">🛠️</span>
+              <h4 class="font-bold text-warm-900 text-sm mt-1">拒絕形式，務實落地</h4>
+              <p class="text-xs text-warm-700 mt-1">不做剪貼文書，依企業產業型態量身打造方案。</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg border border-warm-200">
+              <span class="text-xl">💬</span>
+              <h4 class="font-bold text-warm-900 text-sm mt-1">親切陪伴，同理溝通</h4>
+              <p class="text-xs text-warm-700 mt-1">用白話接地氣語言溝通，做 HR 最靠譜的神隊友。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Banner Divider -->
+    <div class="w-full h-48 md:h-64 relative overflow-hidden">
+      <img src="hero.jpg" alt="職場健康與顧問服務工作現場" class="w-full h-full object-cover brightness-75" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/workspace/1200/400';">
+      <div class="absolute inset-0 bg-morandi-greenDark/30 flex items-center justify-center">
+        <blockquote class="text-white font-serif text-xl md:text-2xl font-medium tracking-widest text-center px-4">
+          「專業為實、AI 科技賦能，打造具安全感的職場環境。」
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- 4. 專長技能 Skills (Cards Grid) -->
+    <section id="skills" class="py-20 px-6 max-w-6xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-warm-900">專長技能</h2>
+        <p class="text-warm-700">
+          解決職場上的棘手問題不需要艱澀難懂的法條，而是需要能落地執行的策略。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Skill Card 1 -->
+        <div class="bg-white p-6 rounded-xl border border-warm-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl">🔍</span>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded bg-morandi-greenLight text-morandi-greenDark">專精</span>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-warm-900 mb-2">職場不法侵害與霸凌調查</h3>
+          <p class="text-sm text-warm-700">
+            擔任第三方獨立顧問，釐清職場權力濫用與霸凌申訴，產出客觀具公信力的調查報告。
+          </p>
+        </div>
+
+        <!-- Skill Card 2 -->
+        <div class="bg-white p-6 rounded-xl border border-warm-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl">📋</span>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded bg-morandi-greenLight text-morandi-greenDark">專精</span>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-warm-900 mb-2">職場性騷擾事件外部調查</h3>
+          <p class="text-sm text-warm-700">
+            依據最新性平法規執行中立訪談與事證交叉比對，協助企業落實程序正義與善後機制。
+          </p>
+        </div>
+
+        <!-- Skill Card 3 -->
+        <div class="bg-white p-6 rounded-xl border border-warm-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl">🏥</span>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded bg-morandi-greenLight text-morandi-greenDark">專精</span>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-warm-900 mb-2">職安「四大計畫」規劃與導入</h3>
+          <p class="text-sm text-warm-700">
+            客製化量身打造過勞、霸凌、母性保護與人因危害預防計畫，幫助企業高效率通過勞檢。
+          </p>
+        </div>
+
+        <!-- Skill Card 4 -->
+        <div class="bg-white p-6 rounded-xl border border-warm-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl">🩺</span>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded bg-warm-200 text-warm-800">熟練</span>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-warm-900 mb-2">勞工健康服務與臨場諮詢</h3>
+          <p class="text-sm text-warm-700">
+            協助梳理特別危害健康作業管理、臨場健康服務流程與員工健康追蹤防護網。
+          </p>
+        </div>
+
+        <!-- Skill Card 5 -->
+        <div class="bg-white p-6 rounded-xl border border-warm-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl">🎤</span>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded bg-warm-200 text-warm-800">熟練</span>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-warm-900 mb-2">白話法規與健康宣導講座</h3>
+          <p class="text-sm text-warm-700">
+            規劃高互動性的職場霸凌防治、人因工效學與壓力舒緩講座，把硬法規轉化為接地氣的日常實踐。
+          </p>
+        </div>
+
+        <!-- Skill Card 6 -->
+        <div class="bg-white p-6 rounded-xl border border-warm-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl">🤖</span>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded bg-warm-200 text-warm-800">熟練</span>
+          </div>
+          <h3 class="font-serif font-bold text-xl text-warm-900 mb-2">AI 工作流與數據分析應用</h3>
+          <p class="text-sm text-warm-700">
+            運用 AI 工具輔助健康問卷統計、結構化整理訪談紀錄與梳理法規文件，大幅提升合規效率。
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Certifications Badge Area -->
+      <div class="mt-12 p-6 bg-warm-100 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4 border border-warm-200">
+        <div class="flex items-center gap-3">
+          <span class="text-3xl">🏅</span>
+          <div>
+            <h4 class="font-serif font-bold text-warm-900">專業證照認證</h4>
+            <p class="text-xs text-warm-700">(2025) ISO 45001 職業安全衛生管理系統主導稽核員 / BSI</p>
+          </div>
+        </div>
+        <span class="text-xs bg-white text-warm-800 px-3 py-1.5 rounded border border-warm-300 font-medium">國際標準認證</span>
+      </div>
+    </section>
+
+    <!-- 5. 服務項目 Services (Alternating / Distinct Blocks) -->
+    <section id="services" class="py-20 px-6 bg-warm-100 border-y border-warm-200">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-warm-900">服務項目</h2>
+          <p class="text-warm-700">
+            針對企業的不同需求，提供全方位的專業協助，優雅合規、輕鬆解決職場疑難雜症。
+          </p>
+        </div>
+
+        <div class="space-y-8">
+          
+          <!-- Service 1 -->
+          <div class="bg-white p-8 rounded-2xl border border-warm-200 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-8 space-y-4">
+              <span class="text-xs font-bold tracking-wider uppercase text-morandi-wood bg-morandi-woodLight px-3 py-1 rounded">服務 01</span>
+              <h3 class="text-2xl font-serif font-bold text-warm-900">職場性騷擾與不法侵害（霸凌）外部獨立調查</h3>
+              <p class="text-sm text-warm-700">
+                <strong class="text-warm-900">適合誰：</strong> 收到職場性騷或霸凌申訴、希望避免內部立場偏頗/球員兼裁判疑慮，並需要具備公信力調查報告的人資與企業主。
+              </p>
+              <p class="text-sm text-warm-700">
+                <strong class="text-warm-900">內容是什麼：</strong> 擔任第三方獨立調查顧問，進行中立訪談、事證交叉比對、研判爭議要件，並產出符合法規要求的完整調查報告書與後續改善建議。
+              </p>
+              <div class="pt-2 text-xs text-morandi-gray">
+                🕒 進行方式與長度：線上或實體訪談 + 事證研判 ➔ 提交報告；專案執行約 2～4 週（視案情彈性調整）。
+              </div>
+            </div>
+            <div class="lg:col-span-4 bg-warm-50 p-6 rounded-xl border border-warm-200 text-center space-y-3">
+              <span class="text-4xl">⚖️</span>
+              <h4 class="font-serif font-semibold text-warm-900">第三方中立調查</h4>
+              <p class="text-xs text-warm-700">具備法律依據與客觀邏輯，降低企業訴訟風險。</p>
+              <a href="#contact" class="inline-block text-xs bg-morandi-green text-white px-4 py-2 rounded hover:bg-morandi-greenDark transition-colors">預約調查諮詢</a>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="bg-white p-8 rounded-2xl border border-warm-200 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-8 space-y-4">
+              <span class="text-xs font-bold tracking-wider uppercase text-morandi-green bg-morandi-greenLight px-3 py-1 rounded">服務 02</span>
+              <h3 class="text-2xl font-serif font-bold text-warm-900">職安「四大計畫」客製導入與勞工健康服務輔導</h3>
+              <p class="text-sm text-warm-700">
+                <strong class="text-warm-900">適合誰：</strong> 需符合《職安法》規範，但缺乏專職醫護或法務資源，希望擺脫「複製貼上範本」、高效通過勞檢的中小企業。
+              </p>
+              <p class="text-sm text-warm-700">
+                <strong class="text-warm-900">內容是什麼：</strong> 依據企業實體作業型態與風險點，量身建構「防過勞、防霸凌、母性保護、人因危害」四大預防計畫，並結合 AI 工具輔助健康問卷與人因風險數據分析。
+              </p>
+              <div class="pt-2 text-xs text-morandi-gray">
+                🕒 進行方式與長度：現況評估 ➔ 制度量身打造 ➔ 系統化導入與輔導；單次專案輔導或按月/季維護諮詢。
+              </div>
+            </div>
+            <div class="lg:col-span-4 bg-warm-50 p-6 rounded-xl border border-warm-200 text-center space-y-3">
+              <span class="text-4xl">📋</span>
+              <h4 class="font-serif font-semibold text-warm-900">真正落地的防護網</h4>
+              <p class="text-xs text-warm-700">擺脫無效公版，結合 AI 工具數位化高效合規。</p>
+              <a href="#contact" class="inline-block text-xs bg-morandi-green text-white px-4 py-2 rounded hover:bg-morandi-greenDark transition-colors">評估四大計畫</a>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="bg-white p-8 rounded-2xl border border-warm-200 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-8 space-y-4">
+              <span class="text-xs font-bold tracking-wider uppercase text-morandi-wood bg-morandi-woodLight px-3 py-1 rounded">服務 03</span>
+              <h3 class="text-2xl font-serif font-bold text-warm-900">接地氣的職場健康與霸凌防治主題講座</h3>
+              <p class="text-sm text-warm-700">
+                <strong class="text-warm-900">適合誰：</strong> 想提升全同仁法規意識、營造友善職場文化，或希望為員工舉辦實用、不催眠健康培訓的企業 HR 與福委會。
+              </p>
+              <p class="text-sm text-warm-700">
+                <strong class="text-warm-900">內容是什麼：</strong> 涵蓋「職場霸凌與性騷防治」、「職場壓力與情緒調適」、「人因工效學與姿勢改善」等主題，用白話案例與 AI 情境互動取代枯燥法條。
+              </p>
+              <div class="pt-2 text-xs text-morandi-gray">
+                🕒 進行方式與長度：實體講座或線上直播；單場時間為 1.5～3 小時（可依需求客製）。
+              </div>
+            </div>
+            <div class="lg:col-span-4 bg-warm-50 p-6 rounded-xl border border-warm-200 text-center space-y-3">
+              <span class="text-4xl">🎤</span>
+              <h4 class="font-serif font-semibold text-warm-900">白話生動不催眠</h4>
+              <p class="text-xs text-warm-700">高互動、聽得懂且用得上的 practical 技巧。</p>
+              <a href="#contact" class="inline-block text-xs bg-morandi-green text-white px-4 py-2 rounded hover:bg-morandi-greenDark transition-colors">邀約講座培訓</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Service Flow -->
+        <div class="mt-12 p-6 bg-white rounded-xl border border-warm-200 text-center">
+          <h4 class="font-serif font-bold text-warm-900 text-base mb-4">服務合作流程</h4>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-2 text-xs md:text-sm text-warm-700 font-medium">
+            <span>初步需求諮詢</span>
+            <span class="hidden sm:inline text-morandi-gray">➔</span>
+            <span>方案量身規劃</span>
+            <span class="hidden sm:inline text-morandi-gray">➔</span>
+            <span>簽約與執行</span>
+            <span class="hidden sm:inline text-morandi-gray">➔</span>
+            <span>產出專業報告 / 講座落地</span>
+            <span class="hidden sm:inline text-morandi-gray">➔</span>
+            <span>後續追蹤與維護</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. 他人推薦 Testimonials -->
+    <section id="testimonials" class="py-20 px-6 max-w-4xl mx-auto">
+      <div class="text-center space-y-4 mb-16">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-warm-900">客戶推薦與評價</h2>
+        <p class="text-warm-700">
+          不確定服務風格是否適合貴公司？聽聽曾一起合作過的人資夥伴怎麼說：
+        </p>
+      </div>
+
+      <!-- Single Highlight Testimonial Box -->
+      <div class="bg-white p-8 md:p-10 rounded-2xl border border-warm-200 shadow-md relative">
+        <span class="text-5xl font-serif text-warm-300 absolute top-6 left-6 select-none">“</span>
+        <div class="relative z-10 space-y-6">
+          <blockquote class="text-base md:text-lg text-warm-800 leading-relaxed font-serif pt-4">
+            「以前處理職場霸凌案件時，內部人員往往夾在雙方中間、立場十分尷尬，也很難做到絕對客觀。這次邀請顧問擔任外部獨立調查人員，過程表現得非常專業且具有親和力。<br><br>
+            在訪談時，顧問能以溫暖且客觀的角度安撫當事人的焦慮情緒，同時又能以極為嚴謹的邏輯交叉比對事證。最後提交的調查報告不僅法規依據明確、結構完整，更提供了非常實用的後續處置建議，讓我們圓滿合規地解決職場爭議，真正幫 HR 卸下了懸在心中的大石頭！」
+          </blockquote>
+
+          <div class="pt-4 border-t border-warm-200 flex items-center justify-between">
+            <div>
+              <p class="font-bold text-warm-900 font-serif">黑橋牌企業股份有限公司</p>
+              <p class="text-xs text-morandi-gray">人資專員</p>
+            </div>
+            <span class="text-2xl">🤝</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 專業知識區 AEO Section (id="knowledge") -->
+    <section id="knowledge" class="py-20 px-6 bg-warm-100 border-y border-warm-200">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <!-- 7-1 名稱 -->
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-warm-900">職場永續與安心指南</h2>
+          <!-- 7-2 專業領域副標 -->
+          <p class="text-warm-700">
+            協助企業與組織化解職場爭議、落實四大計畫，並運用 AI 工具與永續思維打造安心友善的職場環境。
+          </p>
+        </div>
+
+        <!-- Article Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Article Card 1 -->
+          <div class="bg-white rounded-xl border border-warm-200 overflow-hidden shadow-sm flex flex-col justify-between">
+            <div class="p-6 space-y-4">
+              <span class="text-xs font-semibold px-2.5 py-1 bg-morandi-greenLight text-morandi-greenDark rounded">外部調查專題</span>
+              <h3 class="font-serif font-bold text-xl text-warm-900 leading-snug">
+                職場性騷擾申訴一定要找外部調查嗎？HR 與企業必知的 3 大法律防護重點
+              </h3>
+              <p class="text-sm text-warm-700 line-clamp-3">
+                雖然法規未強制要求外部調查，但聘請客觀中立的第三方調查能有效避免「球員兼裁判」的質疑，確保程序正義並降低後續法律訴訟風險。
+              </p>
+            </div>
+            <div class="px-6 pb-6 pt-2">
+              <a href="workplace-sexual-harassment-external-investigation.html" class="inline-flex items-center gap-1 text-sm font-semibold text-morandi-green hover:text-morandi-greenDark transition-colors">
+                <span>閱讀全文</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Article Card 2 -->
+          <div class="bg-white rounded-xl border border-warm-200 overflow-hidden shadow-sm flex flex-col justify-between">
+            <div class="p-6 space-y-4">
+              <span class="text-xs font-semibold px-2.5 py-1 bg-morandi-woodLight text-morandi-wood rounded">職安四大計畫</span>
+              <h3 class="font-serif font-bold text-xl text-warm-900 leading-snug">
+                中小企業沒有專職醫護，如何輕鬆落實「職安四大計畫」避免勞檢受罰？
+              </h3>
+              <p class="text-sm text-warm-700 line-clamp-3">
+                企業可透過外部專業顧問引導，並結合 AI 工具進行資料化問卷與風險評估，以最小人力快速打造合規且實用的健康管理計畫。
+              </p>
+            </div>
+            <div class="px-6 pb-6 pt-2">
+              <a href="four-occupational-health-plans-for-sme.html" class="inline-flex items-center gap-1 text-sm font-semibold text-morandi-green hover:text-morandi-greenDark transition-colors">
+                <span>閱讀全文</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. 常見問題 FAQ -->
+    <section id="faq" class="py-20 px-6 max-w-4xl mx-auto">
+      <div class="text-center space-y-4 mb-16">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-warm-900">常見問題（FAQ）</h2>
+        <p class="text-warm-700">
+          解答尋求外部調查或健康顧問服務時最常有的疑問：
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        
+        <!-- FAQ Item 1 -->
+        <div class="bg-white p-6 rounded-xl border border-warm-200 space-y-3">
+          <h3 class="font-serif font-bold text-lg text-warm-900 flex items-start gap-3">
+            <span class="text-morandi-green font-sans">Q1.</span>
+            <span>為什麼性騷擾或霸凌事件需要找「外部調查人員」，不能由公司 HR 或法務自己查嗎？</span>
+          </h3>
+          <p class="text-sm text-warm-700 pl-8 leading-relaxed">
+            內部人員調查容易面臨「立場偏頗」或「球員兼裁判」的質疑，甚至因私下打聽造成二次傷害。聘請外部獨立顧問能確保調查過程客觀中立、程序合法，產出的報告極具公信力，能有效降低公司後續的法律風險。
+          </p>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="bg-white p-6 rounded-xl border border-warm-200 space-y-3">
+          <h3 class="font-serif font-bold text-lg text-warm-900 flex items-start gap-3">
+            <span class="text-morandi-green font-sans">Q2.</span>
+            <span>我們公司規模不大、沒有專職醫護，一定要做「四大計畫」嗎？會不會花很多時間？</span>
+          </h3>
+          <p class="text-sm text-warm-700 pl-8 leading-relaxed">
+            依《職安法》規定，所有事業單位都有責任落實健康保護。我會結合 AI 工具輔助問卷統計與風險評估，以最簡化、效益最高的方式為貴公司量身打造，擺脫複製貼上的無效範本，輕鬆過關且不佔用過多營運時間。
+          </p>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="bg-white p-6 rounded-xl border border-warm-200 space-y-3">
+          <h3 class="font-serif font-bold text-lg text-warm-900 flex items-start gap-3">
+            <span class="text-morandi-green font-sans">Q3.</span>
+            <span>諮詢或合作流程是怎樣的？需要準備很多資料嗎？</span>
+          </h3>
+          <p class="text-sm text-warm-700 pl-8 leading-relaxed">
+            流程非常簡單！可以先透過線上諮詢聊聊現況與需求，我會為你釐清缺口並提供明確的服務方案。確定合作後，我會引導你準備關鍵資料，其餘繁瑣的文字結構化與流程規劃都由我來搞定！
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. 聯絡我 Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-morandi-greenDark text-white">
+      <div class="max-w-4xl mx-auto text-center space-y-8">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold">聯絡我</h2>
+        <p class="text-warm-100 text-base md:text-lg max-w-2xl mx-auto font-light">
+          有職場爭議需要第三方協助、想規劃落地的四大計畫，或是想安排一場生動不催眠的講座嗎？歡迎隨時聯繫我，我通常會在 1~2 個工作天內親切回覆你！
+        </p>
+
+        <div class="pt-6 flex flex-col sm:flex-row items-center justify-center gap-6">
+          <!-- Email Button -->
+          <a href="mailto:hrs0425123@gmail.com" class="w-full sm:w-auto bg-white text-morandi-greenDark px-8 py-3.5 rounded-lg font-medium hover:bg-warm-100 transition-colors flex items-center justify-center gap-2">
+            <span>✉️</span>
+            <span>Email 郵件聯繫</span>
+          </a>
+
+          <!-- Line Button -->
+          <a href="https://line.me/R/ti/p/@zpf8637x" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-emerald-600 text-white px-8 py-3.5 rounded-lg font-medium hover:bg-emerald-700 transition-colors flex items-center justify-center gap-2">
+            <span>💬</span>
+            <span>LINE 官方帳號 (@zpf8637x)</span>
+          </a>
+        </div>
+
+        <div class="pt-8 text-xs text-warm-200/80">
+          公開 Email：hrs0425123@gmail.com ｜ LINE ID：@zpf8637x
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-warm-900 text-warm-200 py-8 px-6 text-center text-xs space-y-2">
+    <p>© 2026 紅眼睛顧問. All Rights Reserved.</p>
+    <p class="text-warm-300/60">職場權益調查 ｜ 勞工健康服務四大計畫 ｜ 主題講座諮詢</p>
+  </footer>
+
+  <!-- Simple Mobile Menu Toggle Script -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
